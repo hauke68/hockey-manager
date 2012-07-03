@@ -13,7 +13,7 @@ find_package(LibXml2 REQUIRED)
 find_package(ClanLib REQUIRED)
 
 if(ClanLib_FOUND)
-				ADD_DEFINITIONS(-DUSE_CLANLIB -I/usr/include/ClanLib-1.0 -I/usr/local/include/ClanLib-1.0)
+				ADD_DEFINITIONS(-DUSE_CLANLIB -I/usr/include/ClanLib-2.3 -I/usr/local/include/ClanLib-2.3)
 				FIND_LIBRARY(libfreetype SHARED)
 				FIND_LIBRARY(libfontconfig SHARED)
 else(ClanLib_FOUND)
