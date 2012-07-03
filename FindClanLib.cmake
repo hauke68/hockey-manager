@@ -22,6 +22,7 @@ ENDIF(ClanLib_INCLUDE_DIRS)
 IF(NOT ClanLib_FIND_COMPONENTS)
   SET(ClanLib_FIND_COMPONENTS
     App
+    CSSLayout
     Display
     GL
     GUI
@@ -96,11 +97,11 @@ ENDFOREACH(COMPONENT)
 MARK_AS_ADVANCED(
   ClanLib_INCLUDE_DIRS
   ClanLib_App_LIBRARY
+  ClanLib_CSSLayout_LIBRARY
   ClanLib_Core_LIBRARY
   ClanLib_Display_LIBRARY
   ClanLib_GL_LIBRARY
   ClanLib_GUI_LIBRARY
-  ClanLib_GUIStyleSilver_LIBRARY
   ClanLib_MikMod_LIBRARY
   ClanLib_Network_LIBRARY
   ClanLib_SDL_LIBRARY
