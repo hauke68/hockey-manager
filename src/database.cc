@@ -139,7 +139,7 @@ string DBObject::to_str() {
 		return value.sValue;
 		break;
 	case SQLITE_INTEGER:
-		snprintf(res, 512, "%d", value.iValue);
+		snprintf(res, 512, "%ld", value.iValue);
 		break;
 	case SQLITE_UINT:
 		snprintf(res, 512, "%d", value.uiValue);
@@ -331,7 +331,7 @@ DBTable *Database::Load(string table, string key_name, unsigned long key_val) {
 	DBTable *t = new(DBTable);
 
 	s = (char*)malloc(128);
-	sprintf(s, "%d", key_val);
+	sprintf(s, "%ld", key_val);
 	__exec("SELECT * FROM " + table + " WHERE " + key_name + "=" + s, t);
 
 	free(s);
