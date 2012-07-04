@@ -28,7 +28,6 @@ IF(NOT ClanLib_FIND_COMPONENTS)
     GUI
     MikMod
     Network
-    SDL
     Signals
     Sound
     Vorbis)
@@ -104,7 +103,6 @@ MARK_AS_ADVANCED(
   ClanLib_GUI_LIBRARY
   ClanLib_MikMod_LIBRARY
   ClanLib_Network_LIBRARY
-  ClanLib_SDL_LIBRARY
   ClanLib_Signals_LIBRARY
   ClanLib_Sound_LIBRARY
   ClanLib_Vorbis_LIBRARY
