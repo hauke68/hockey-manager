@@ -1,6 +1,7 @@
 set(SOURCES
 				arena.cc
 				database.cc
+				hockey-manager.cc
 				league.cc
 				manager.cc
 				main.cc

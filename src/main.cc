@@ -6,6 +6,8 @@
 
 #include <vector>
 
+#include "hockey-manager.h"
+
 using namespace std;
 
 class Main {
@@ -26,6 +28,17 @@ public:
 		CL_SetupGUI     setup_gui;
 
 		// Start the game here
+		try {
+			HockeyManager hm;
+			hm.run();
+		} catch(CL_Exception &e) {
+			CL_ConsoleWindow console("Console", 80, 160);
+			CL_Console::write_line("Error: " + e.get_message_and_stack_trace());
+
+			console.display_close_message();
+
+			return -1;
+		}
 
 		return 0;
 	}
