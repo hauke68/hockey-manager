@@ -14,6 +14,6 @@ You need the following:
 
 ### Windows
 - ClanLib 2.3.x
-- MingW (or compatible)(?)
+- Visual Studio
 - SQlite3
 - CMake
