@@ -5,6 +5,7 @@ set(SOURCES
 				league.cc
 				manager.cc
 				main.cc
+				menubar.cc
 				player.cc
 				team.cc
 )
